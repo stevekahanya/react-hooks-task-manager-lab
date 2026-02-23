@@ -6,7 +6,6 @@ function SearchBar() {
   const { setSearchQuery } = useContext(TaskContext);
 
   function handleSearch() {
-    // Access the raw DOM value via the ref and update global state
     setSearchQuery(searchInputRef.current.value);
   }
 

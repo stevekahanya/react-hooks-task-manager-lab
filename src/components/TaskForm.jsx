@@ -3,13 +3,13 @@ import { TaskContext } from "../context/TaskContext";
 
 function TaskForm() {
   const [taskName, setTaskName] = useState("");
-  const inputId = useId(); // Generate unique ID
-  const { addTask } = useContext(TaskContext); // Consume Context
+  const inputId = useId(); 
+  const { addTask } = useContext(TaskContext);
 
   function handleSubmit(e) {
     e.preventDefault();
     if (taskName.trim() === "") return;
-    addTask(taskName); // Trigger context function
+    addTask(taskName);
     setTaskName("");
   }
 
