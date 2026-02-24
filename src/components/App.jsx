@@ -1,11 +1,11 @@
 import React from "react";
-import TaskForm from "./TaskForm";
-import SearchBar from "./SearchBar";
-import TaskList from "./TaskList";
+import TaskForm from "./components/TaskForm";
+import SearchBar from "./components/SearchBar";
+import TaskList from "./components/TaskList";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <h1>Task Manager</h1>
       <TaskForm />
       <SearchBar />
