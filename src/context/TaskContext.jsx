@@ -6,6 +6,7 @@ export const TaskProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
+  // Initial load
   useEffect(() => {
     fetch("http://localhost:3000/tasks")
       .then((res) => res.json())
