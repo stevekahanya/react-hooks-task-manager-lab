@@ -5,9 +5,9 @@ function SearchBar() {
   const searchInputRef = useRef();
   const { setSearchQuery } = useContext(TaskContext);
 
-  function handleSearch() {
+  const handleSearch = () => {
     setSearchQuery(searchInputRef.current.value);
-  }
+  };
 
   return (
     <div>
